@@ -49,6 +49,18 @@
 
         .col-8{
             flex: none;
+            padding-left: 25px;
+        }
+
+        .col-12{
+            flex: none;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         #home p{
@@ -134,7 +146,7 @@
         }
 
         input.form-control{
-            margin: 15px 0;
+            margin: 5px 0;
             height: 50px;
             background-color: #F2F0F0;
             border-radius: 0;
@@ -213,20 +225,20 @@
     
         <section id="formulario" class="col-12 col-lg-8">
     
-            <div style="padding-right: 35px;">
+            <div>
                 <h1>Crie Sua Conta</h1>
                 <p>Preencha seus dados</p>
             </div>
     
-            <div class="col-8">
+            <div class="col-md-8 col-12">
                 <form action="">
-                    <i style="width: 50px; height: 50px;" class="fa-solid fa-user-plus fa-xl"></i><input class="form-control d-inline col-10" type="text" name="" id=""><br>
-                    <i style="width: 50px; height: 50px;" class="fa-regular fa-envelope fa-xl"></i><input class="form-control d-inline col-10" type="email" name="" id=""><br>
-                    <i style="width: 50px; height: 50px;" class="fa-solid fa-lock fa-xl"></i><input class="form-control d-inline col-10" type="password" name="" id="">
+                    <input class="form-control d-inline col-md-12 col-8" placeholder="Nome de Usuario" type="text" name="" id=""><br>
+                    <input class="form-control d-inline col-md-12 col-8" placeholder="Seu email..." type="email" name="" id=""><br>
+                    <input class="form-control d-inline col-md-12 col-8" placeholder="Sua senha..." type="password" name="" id="">
                 </form>
             </div>
     
-            <div style="padding-right: 35px;">
+            <div>
                 <button class="btn btn-outline-danger" type="button">Cadastrar</button>
             </div>
     
